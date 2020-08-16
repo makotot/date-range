@@ -15,7 +15,8 @@
     "build": "tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint",
-    "prepare": "tsdx build"
+    "prepare": "tsdx build",
+    "release": "auto shipit"
   },
   "peerDependencies": {},
   "husky": {
@@ -33,6 +34,8 @@
   "author": "makotot",
   "module": "dist/date-range.esm.js",
   "devDependencies": {
+    "@auto-it/conventional-commits": "^9.50.11",
+    "auto": "^9.50.11",
     "husky": "^4.2.5",
     "tsdx": "^0.13.2",
     "tslib": "^2.0.1",
@@ -40,5 +43,14 @@
   },
   "dependencies": {
     "date-fns": "^2.15.0"
+  },
+  "repository": "makotot/date-range",
+  "auto": {
+    "plugins": [
+      "npm",
+      "conventional-commits",
+      "released"
+    ],
+    "onlyPublishWithReleaseLabel": true
   }
 }
