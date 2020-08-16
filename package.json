@@ -52,5 +52,8 @@
       "released"
     ],
     "onlyPublishWithReleaseLabel": true
-  }
+  },
+  "keywords": [
+    "date"
+  ]
 }
